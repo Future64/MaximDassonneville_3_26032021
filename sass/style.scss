@@ -4,7 +4,7 @@ $sec-color: #FF79DA;
 $ter-color: #99E2D0;
 $light-grey: #f7f7f7;
 $dark-grey: hsl(0, 5%, 89%);
-$black-footer: #262626;
+$black-footer: #323131;
 $size-logo: 30px;
 $size-title: 25px;
 $size-text: 15px;
@@ -160,6 +160,7 @@ main{
         justify-content: center;
         align-items: center;
         background-color: $light-grey;
+        margin-top: $big-margin;
 
         .cart{
             position: relative;
@@ -200,5 +201,34 @@ main{
             }
 
         }
+    }
+}
+
+footer{
+    background-color: $black-footer;
+    padding: 18px;
+
+    .omf-litle-logo{
+        font-family: 'Shrikhand', cursive;
+        color: white;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    li, a{
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .fa-utensils{
+        margin-right: 5px;
+    }
+
+    .fa-hands-helping{
+        font-size: 12px;
+        margin-right: 2px;
     }
 }
