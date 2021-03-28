@@ -1,3 +1,126 @@
+/* Variables */
+p, h2 {
+  font-family: "Roboto", sans-serif;
+}
 
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+}
+
+.logo-ohmyfood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-ohmyfood h1 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-size: 30px;
+  margin: 15px 0 15px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .zone-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: #e4e2e2;
+  border-top: solid;
+  border-color: #cecece;
+}
+form .explore-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+form .explore-form h2, form .explore-form p {
+  text-align: center;
+}
+form .explore-form h2 {
+  margin: 55px 0 15px 0;
+}
+
+.fa-map-marker-alt {
+  color: #262626;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+input {
+  margin: 15px;
+  border: none;
+  background-color: #e4e2e2;
+}
+
+input::placeholder {
+  color: #262626;
+  font-size: 17px;
+}
+
+button {
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 12px 20px 12px 20px;
+  margin: 30px 0 55px 0;
+  background: linear-gradient(175deg, #FF79DA, 40%, #9356DC);
+  border: none;
+}
+button .button-explore {
+  color: white;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside .button-aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f7f7f7;
+  width: 280px;
+  height: 70px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  box-shadow: 2px 5px 10px 2px #e4e2e2;
+}
+aside .circle {
+  position: absolute;
+  margin-right: 270px;
+  background-color: #9356DC;
+  color: white;
+  padding: 5px 9px 5px 9px;
+  border-radius: 100%;
+}
+aside .fas {
+  position: absolute;
+  margin-left: -198px;
+}
+
+main h2 {
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
