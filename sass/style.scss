@@ -22,8 +22,10 @@ p, h2{
 }
 
 h2{
+    margin-top: $big-margin;
+    margin-bottom: $medium-margin;
     font-size: $size-title;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 p{
@@ -77,6 +79,11 @@ form{
         h2{
             margin: $big-margin 0 $litle-margin 0;
         }
+
+        p{
+            font-weight: 300;
+            font-size: 18px;
+        }
     }
 }
 
@@ -118,6 +125,10 @@ aside{
     justify-content: center;
     align-items: center;
 
+    h2{
+        margin-left: -110px;
+    }
+
     .button-aside{
         display: flex;
         flex-direction: row;
@@ -149,10 +160,6 @@ aside{
 
 main{
 
-    h2{
-        margin-top: $big-margin;
-        margin-bottom: $medium-margin;
-    }
 
     .restaurants{
         display: flex;
@@ -162,6 +169,10 @@ main{
         background-color: $light-grey;
         margin-top: $big-margin;
 
+        h2{
+            margin-left: -148px;
+        }
+
         .cart{
             position: relative;
             width: 280px;
@@ -170,6 +181,19 @@ main{
             background-color: white;
             box-shadow: 2px 5px 10px 2px $dark-grey;
             margin-bottom: $litle-margin;
+
+            .green-nouveau{
+                position: absolute;
+                background-color: rgb(146, 216, 195);
+                padding: 8px 10px;
+                border-radius: 2px;
+                margin: 15px 0 0 188px;
+                box-shadow: 1px 1px 8px 1px $black-footer;
+
+                p{
+                    color: green;
+                }
+            }
 
             img{
                 border-radius: 15px 15px 0 0;
@@ -207,6 +231,7 @@ main{
 footer{
     background-color: $black-footer;
     padding: 18px;
+    margin-top: $big-margin;
 
     .omf-litle-logo{
         font-family: 'Shrikhand', cursive;

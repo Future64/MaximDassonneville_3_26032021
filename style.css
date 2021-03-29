@@ -4,8 +4,10 @@ p, h2 {
 }
 
 h2 {
+  margin-top: 55px;
+  margin-bottom: 30px;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 p {
@@ -55,6 +57,10 @@ form .explore-form h2, form .explore-form p {
 form .explore-form h2 {
   margin: 55px 0 15px 0;
 }
+form .explore-form p {
+  font-weight: 300;
+  font-size: 18px;
+}
 
 .fa-map-marker-alt {
   color: #323131;
@@ -92,6 +98,9 @@ aside {
   justify-content: center;
   align-items: center;
 }
+aside h2 {
+  margin-left: -110px;
+}
 aside .button-aside {
   display: flex;
   flex-direction: row;
@@ -118,10 +127,6 @@ aside .fas {
   margin-left: -198px;
 }
 
-main h2 {
-  margin-top: 55px;
-  margin-bottom: 30px;
-}
 main .restaurants {
   display: flex;
   flex-direction: column;
@@ -129,6 +134,9 @@ main .restaurants {
   align-items: center;
   background-color: #f7f7f7;
   margin-top: 55px;
+}
+main .restaurants h2 {
+  margin-left: -148px;
 }
 main .restaurants .cart {
   position: relative;
@@ -138,6 +146,17 @@ main .restaurants .cart {
   background-color: white;
   box-shadow: 2px 5px 10px 2px #e4e2e2;
   margin-bottom: 15px;
+}
+main .restaurants .cart .green-nouveau {
+  position: absolute;
+  background-color: #92d8c3;
+  padding: 8px 10px;
+  border-radius: 2px;
+  margin: 15px 0 0 188px;
+  box-shadow: 1px 1px 8px 1px #323131;
+}
+main .restaurants .cart .green-nouveau p {
+  color: green;
 }
 main .restaurants .cart img {
   border-radius: 15px 15px 0 0;
@@ -166,6 +185,7 @@ main .restaurants .cart .fa-heart {
 footer {
   background-color: #323131;
   padding: 18px;
+  margin-top: 55px;
 }
 footer .omf-litle-logo {
   font-family: "Shrikhand", cursive;
