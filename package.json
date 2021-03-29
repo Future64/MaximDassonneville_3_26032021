@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassRooms",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch sass/style.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Future64/MaximDassonneville_3_26032021.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Future64/MaximDassonneville_3_26032021/issues"
+  },
+  "homepage": "https://github.com/Future64/MaximDassonneville_3_26032021#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

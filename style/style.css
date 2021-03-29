@@ -1,4 +1,7 @@
-/* Variables */
+/* Couleur */
+/* Taille */
+/* Margin */
+/* Radius */
 p, h2 {
   font-family: "Roboto", sans-serif;
 }
@@ -16,6 +19,11 @@ p {
 
 .p-bold {
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .logo-ohmyfood {
@@ -215,6 +223,12 @@ footer .fa-hands-helping {
 .header-restaurants {
   position: relative;
 }
+.header-restaurants .fa-arrow-left {
+  position: absolute;
+  font-size: 30px;
+  top: 15px;
+  left: 30px;
+}
 
 .section-restaurant {
   display: flex;
@@ -278,5 +292,7 @@ footer .fa-hands-helping {
 .section-restaurant button {
   padding: 12px 40px;
 }
+
+/* ./dart-sass/sass ./sass/style.sass ./style/style.css --watch */
 
 /*# sourceMappingURL=style.css.map */

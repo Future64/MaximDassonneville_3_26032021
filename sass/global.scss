@@ -1,0 +1,23 @@
+p, h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    margin-top: $big-margin;
+    margin-bottom: $medium-margin;
+    font-size: $size-title;
+    font-weight: 700;
+}
+
+p{
+    font-size: $size-text;
+}
+
+.p-bold{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,53 +1,8 @@
-/* Variables */
-$prim-color:  #9356DC;
-$sec-color: #FF79DA;
-$ter-color: #99E2D0;
-$light-grey: #f7f7f7;
-$dark-grey: hsl(0, 5%, 89%);
-$black-footer: #323131;
-$size-logo: 30px;
-$size-title: 25px;
-$size-text: 15px;
-$big-margin: 55px;
-$medium-margin: 30px;
-$litle-margin: 15px;
-$width-img: 250px;
-$height-img: 160px;
-$width-ban: 250px;
-$height-ban: 80px;
-$radius: 30px;
+@import 'variable';
+@import 'global';
+@import 'header';
 
-p, h2{
-    font-family: 'Roboto', sans-serif;
-}
 
-h2{
-    margin-top: $big-margin;
-    margin-bottom: $medium-margin;
-    font-size: $size-title;
-    font-weight: 700;
-}
-
-p{
-    font-size: $size-text;
-}
-
-.p-bold{
-    font-weight: bold;
-}
-
-.logo-ohmyfood{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h1{
-        font-family: 'Shrikhand', cursive;
-        font-style: italic;
-        font-size: $size-logo;
-        margin: $litle-margin 0 $litle-margin 0;
-    }
-}
 
 form{
     display: flex;
@@ -262,6 +217,13 @@ footer{
 
 .header-restaurants{
     position: relative;
+
+    .fa-arrow-left{
+        position: absolute;
+        font-size: $size-logo;
+        top: 15px;
+        left: 30px;
+    }
 }
 
 .section-restaurant{
