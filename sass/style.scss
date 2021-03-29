@@ -279,7 +279,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         border-radius: $radius $radius 0 0;
-        margin-top: -990px;
+        margin-top: -1013px;
         background-color: $light-grey;
         width: 100%;
 
@@ -335,3 +335,5 @@ footer{
         padding: 12px 40px;
     }
 }
+
+/* ./dart-sass/sass ./sass/style.sass ./style/style.css --watch */
