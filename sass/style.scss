@@ -32,6 +32,10 @@ p{
     font-size: $size-text;
 }
 
+.p-bold{
+    font-weight: bold;
+}
+
 .logo-ohmyfood{
     display: flex;
     justify-content: center;
@@ -160,7 +164,6 @@ aside{
 
 main{
 
-
     .restaurants{
         display: flex;
         flex-direction: column;
@@ -223,7 +226,6 @@ main{
                 margin-top: -50px;
                 font-size: 20px;
             }
-
         }
     }
 }
@@ -255,5 +257,81 @@ footer{
     .fa-hands-helping{
         font-size: 12px;
         margin-right: 2px;
+    }
+}
+
+.header-restaurants{
+    position: relative;
+}
+
+.section-restaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $light-grey;
+
+    .title-carte{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: $radius $radius 0 0;
+        margin-top: -990px;
+        background-color: $light-grey;
+        width: 100%;
+
+        h2{
+            margin: $medium-margin 0 3px $litle-margin;
+        }
+
+        .fa-heart{
+            position: relative;
+            margin-top: 33px;
+            margin-right: 25px;
+            font-size: 20px;
+        }
+    }
+    .bloc-menu{
+        padding-top: 40px;
+        width: 100%;
+
+        h3{
+            margin-left: 12px;
+            margin-bottom: 10px;
+            border-bottom: solid $ter-color;
+            width: 50px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .p-smooth{
+            font-size: 12px;
+        }
+
+        .cart-menu{
+            position: relative;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 12px;
+            box-shadow: 0px 3px 8px 2px rgb(220, 220, 220);
+        }
+
+        .inline-cart{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+
+        .prix{
+            margin-right: 12px;
+        }
+    }
+
+    button{
+        padding: 12px 40px;
     }
 }
