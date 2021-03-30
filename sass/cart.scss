@@ -1,0 +1,51 @@
+.cart{
+    position: relative;
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 5px 10px 2px $dark-grey;
+    margin-bottom: $litle-margin;
+
+    .green-nouveau{
+        position: absolute;
+        background-color: rgb(146, 216, 195);
+        padding: 8px 10px;
+        border-radius: 2px;
+        margin: 15px 0 0 188px;
+        box-shadow: 1px 1px 8px 1px $black-footer;
+
+        p{
+            color: green;
+        }
+    }
+
+    img{
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: $height-img;
+        object-fit: cover;
+    }
+
+    .p-cart{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 10px 13px;
+        
+
+        p{
+            margin-bottom: 8px;
+        }
+
+        .p-bold{
+            font-weight: bold;
+        }
+    }
+
+    .fa-heart{
+        position: absolute;
+        margin-left: 240px;
+        margin-top: -50px;
+        font-size: 20px;
+    }
+}

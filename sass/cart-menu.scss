@@ -1,0 +1,24 @@
+
+.cart-menu{
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 12px;
+    box-shadow: 0px 3px 8px 2px rgb(220, 220, 220);
+}
+
+.p-smooth{
+    font-size: 12px;
+}
+
+
+.inline-cart{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.prix{
+    margin-right: 12px;
+}

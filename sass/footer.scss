@@ -1,0 +1,29 @@
+footer{
+    background-color: $black-footer;
+    padding: 18px;
+    margin-top: $big-margin;
+
+    .omf-litle-logo{
+        font-family: 'Shrikhand', cursive;
+        color: white;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    li, a{
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .fa-utensils{
+        margin-right: 5px;
+    }
+
+    .fa-hands-helping{
+        font-size: 12px;
+        margin-right: 2px;
+    }
+}

@@ -38,6 +38,111 @@ a {
   margin: 15px 0 15px 0;
 }
 
+button {
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 12px 20px 12px 20px;
+  margin: 30px 0 55px 0;
+  background: linear-gradient(175deg, #FF79DA, 40%, #9356DC);
+  border: none;
+}
+button .button-explore {
+  color: white;
+}
+
+footer {
+  background-color: #323131;
+  padding: 18px;
+  margin-top: 55px;
+}
+footer .omf-litle-logo {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+footer li, footer a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+footer .fa-utensils {
+  margin-right: 5px;
+}
+footer .fa-hands-helping {
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.cart-menu {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 12px;
+  box-shadow: 0px 3px 8px 2px gainsboro;
+}
+
+.p-smooth {
+  font-size: 12px;
+}
+
+.inline-cart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.prix {
+  margin-right: 12px;
+}
+
+.cart {
+  position: relative;
+  width: 280px;
+  height: auto;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 2px 5px 10px 2px #e4e2e2;
+  margin-bottom: 15px;
+}
+.cart .green-nouveau {
+  position: absolute;
+  background-color: #92d8c3;
+  padding: 8px 10px;
+  border-radius: 2px;
+  margin: 15px 0 0 188px;
+  box-shadow: 1px 1px 8px 1px #323131;
+}
+.cart .green-nouveau p {
+  color: green;
+}
+.cart img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.cart .p-cart {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 13px;
+}
+.cart .p-cart p {
+  margin-bottom: 8px;
+}
+.cart .p-cart .p-bold {
+  font-weight: bold;
+}
+.cart .fa-heart {
+  position: absolute;
+  margin-left: 240px;
+  margin-top: -50px;
+  font-size: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -92,18 +197,6 @@ input::placeholder {
   font-size: 17px;
 }
 
-button {
-  font-size: 15px;
-  border-radius: 30px;
-  padding: 12px 20px 12px 20px;
-  margin: 30px 0 55px 0;
-  background: linear-gradient(175deg, #FF79DA, 40%, #9356DC);
-  border: none;
-}
-button .button-explore {
-  color: white;
-}
-
 aside {
   display: flex;
   flex-direction: column;
@@ -149,75 +242,6 @@ main .restaurants {
 }
 main .restaurants h2 {
   margin-left: -148px;
-}
-main .restaurants .cart {
-  position: relative;
-  width: 280px;
-  height: auto;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 2px 5px 10px 2px #e4e2e2;
-  margin-bottom: 15px;
-}
-main .restaurants .cart .green-nouveau {
-  position: absolute;
-  background-color: #92d8c3;
-  padding: 8px 10px;
-  border-radius: 2px;
-  margin: 15px 0 0 188px;
-  box-shadow: 1px 1px 8px 1px #323131;
-}
-main .restaurants .cart .green-nouveau p {
-  color: green;
-}
-main .restaurants .cart img {
-  border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-main .restaurants .cart .p-cart {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0 10px 13px;
-}
-main .restaurants .cart .p-cart p {
-  margin-bottom: 8px;
-}
-main .restaurants .cart .p-cart .p-bold {
-  font-weight: bold;
-}
-main .restaurants .cart .fa-heart {
-  position: absolute;
-  margin-left: 240px;
-  margin-top: -50px;
-  font-size: 20px;
-}
-
-footer {
-  background-color: #323131;
-  padding: 18px;
-  margin-top: 55px;
-}
-footer .omf-litle-logo {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-footer li, footer a {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-}
-footer .fa-utensils {
-  margin-right: 5px;
-}
-footer .fa-hands-helping {
-  font-size: 12px;
-  margin-right: 2px;
 }
 
 .header-restaurants {
@@ -269,25 +293,6 @@ footer .fa-hands-helping {
   width: 50px;
   padding-bottom: 5px;
   text-transform: uppercase;
-}
-.section-restaurant .bloc-menu .p-smooth {
-  font-size: 12px;
-}
-.section-restaurant .bloc-menu .cart-menu {
-  position: relative;
-  background-color: white;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 12px;
-  box-shadow: 0px 3px 8px 2px gainsboro;
-}
-.section-restaurant .bloc-menu .inline-cart {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-}
-.section-restaurant .bloc-menu .prix {
-  margin-right: 12px;
 }
 .section-restaurant button {
   padding: 12px 40px;

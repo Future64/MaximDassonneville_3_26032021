@@ -1,7 +1,10 @@
 @import 'variable';
 @import 'global';
 @import 'header';
-
+@import 'degrad-button';
+@import 'footer';
+@import 'cart-menu';
+@import 'cart';
 
 
 form{
@@ -65,19 +68,6 @@ input::placeholder{
     font-size: 17px;
 }
 
-button{
-    font-size: $size-text;
-    border-radius: $radius;
-    padding: 12px 20px 12px 20px;
-    margin: $medium-margin 0 $big-margin 0;
-    background: linear-gradient(175deg, $sec-color, 40%, $prim-color);
-    border: none;
-    
-    .button-explore{
-        color: white;
-    }
-}
-
 aside{
     display: flex;
     flex-direction: column;
@@ -130,90 +120,10 @@ main{
         h2{
             margin-left: -148px;
         }
-
-        .cart{
-            position: relative;
-            width: 280px;
-            height: auto;
-            border-radius: 15px;
-            background-color: white;
-            box-shadow: 2px 5px 10px 2px $dark-grey;
-            margin-bottom: $litle-margin;
-
-            .green-nouveau{
-                position: absolute;
-                background-color: rgb(146, 216, 195);
-                padding: 8px 10px;
-                border-radius: 2px;
-                margin: 15px 0 0 188px;
-                box-shadow: 1px 1px 8px 1px $black-footer;
-
-                p{
-                    color: green;
-                }
-            }
-
-            img{
-                border-radius: 15px 15px 0 0;
-                width: 100%;
-                height: $height-img;
-                object-fit: cover;
-            }
-
-            .p-cart{
-                display: flex;
-                flex-direction: column;
-                margin: 10px 0 10px 13px;
-                
-
-                p{
-                    margin-bottom: 8px;
-                }
-
-                .p-bold{
-                    font-weight: bold;
-                }
-            }
-
-            .fa-heart{
-                position: absolute;
-                margin-left: 240px;
-                margin-top: -50px;
-                font-size: 20px;
-            }
-        }
     }
 }
 
-footer{
-    background-color: $black-footer;
-    padding: 18px;
-    margin-top: $big-margin;
 
-    .omf-litle-logo{
-        font-family: 'Shrikhand', cursive;
-        color: white;
-        font-size: 20px;
-        margin-top: 5px;
-        margin-bottom: 20px;
-    }
-
-    li, a{
-        text-decoration: none;
-        color: white;
-        margin-bottom: 10px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .fa-utensils{
-        margin-right: 5px;
-    }
-
-    .fa-hands-helping{
-        font-size: 12px;
-        margin-right: 2px;
-    }
-}
 
 .header-restaurants{
     position: relative;
@@ -269,28 +179,6 @@ footer{
             text-transform: uppercase;
         }
 
-        .p-smooth{
-            font-size: 12px;
-        }
-
-        .cart-menu{
-            position: relative;
-            background-color: white;
-            border-radius: 8px;
-            padding: 10px;
-            margin: 12px;
-            box-shadow: 0px 3px 8px 2px rgb(220, 220, 220);
-        }
-
-        .inline-cart{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 5px;
-        }
-
-        .prix{
-            margin-right: 12px;
-        }
     }
 
     button{
