@@ -10,3 +10,14 @@
         margin: $litle-margin 0 $litle-margin 0;
     }
 }
+
+.header-restaurants{
+    position: relative;
+
+    .fa-arrow-left{
+        position: absolute;
+        font-size: $size-logo;
+        top: 15px;
+        left: 30px;
+    }
+}

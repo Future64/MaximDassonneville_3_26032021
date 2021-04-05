@@ -1,0 +1,48 @@
+.section-restaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $light-grey;
+
+    .title-carte{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: $radius $radius 0 0;
+        margin-top: -1013px;
+        background-color: $light-grey;
+        width: 100%;
+
+        h2{
+            margin: $medium-margin 0 3px $litle-margin;
+        }
+
+        .fa-heart{
+            position: relative;
+            margin-top: 33px;
+            margin-right: 25px;
+            font-size: 20px;
+        }
+    }
+    .bloc-menu{
+        padding-top: 40px;
+        width: 100%;
+
+        h3{
+            margin-left: 12px;
+            margin-bottom: 10px;
+            border-bottom: solid $ter-color;
+            width: 50px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+    }
+
+    button{
+        padding: 12px 40px;
+    }
+}

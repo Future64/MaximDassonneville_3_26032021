@@ -38,6 +38,16 @@ a {
   margin: 15px 0 15px 0;
 }
 
+.header-restaurants {
+  position: relative;
+}
+.header-restaurants .fa-arrow-left {
+  position: absolute;
+  font-size: 30px;
+  top: 15px;
+  left: 30px;
+}
+
 button {
   font-size: 15px;
   border-radius: 30px;
@@ -143,6 +153,50 @@ footer .fa-hands-helping {
   font-size: 20px;
 }
 
+.section-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f7;
+}
+.section-restaurant .title-carte {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 30px 30px 0 0;
+  margin-top: -1013px;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+.section-restaurant .title-carte h2 {
+  margin: 30px 0 3px 15px;
+}
+.section-restaurant .title-carte .fa-heart {
+  position: relative;
+  margin-top: 33px;
+  margin-right: 25px;
+  font-size: 20px;
+}
+.section-restaurant .bloc-menu {
+  padding-top: 40px;
+  width: 100%;
+}
+.section-restaurant .bloc-menu h3 {
+  margin-left: 12px;
+  margin-bottom: 10px;
+  border-bottom: solid #99E2D0;
+  width: 50px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+.section-restaurant button {
+  padding: 12px 40px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -243,61 +297,5 @@ main .restaurants {
 main .restaurants h2 {
   margin-left: -148px;
 }
-
-.header-restaurants {
-  position: relative;
-}
-.header-restaurants .fa-arrow-left {
-  position: absolute;
-  font-size: 30px;
-  top: 15px;
-  left: 30px;
-}
-
-.section-restaurant {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: #f7f7f7;
-}
-.section-restaurant .title-carte {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-radius: 30px 30px 0 0;
-  margin-top: -1013px;
-  background-color: #f7f7f7;
-  width: 100%;
-}
-.section-restaurant .title-carte h2 {
-  margin: 30px 0 3px 15px;
-}
-.section-restaurant .title-carte .fa-heart {
-  position: relative;
-  margin-top: 33px;
-  margin-right: 25px;
-  font-size: 20px;
-}
-.section-restaurant .bloc-menu {
-  padding-top: 40px;
-  width: 100%;
-}
-.section-restaurant .bloc-menu h3 {
-  margin-left: 12px;
-  margin-bottom: 10px;
-  border-bottom: solid #99E2D0;
-  width: 50px;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-.section-restaurant button {
-  padding: 12px 40px;
-}
-
-/* ./dart-sass/sass ./sass/style.sass ./style/style.css --watch */
 
 /*# sourceMappingURL=style.css.map */

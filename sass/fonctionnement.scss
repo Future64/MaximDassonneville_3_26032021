@@ -1,0 +1,38 @@
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        margin-left: -110px;
+    }
+
+    .button-aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: $light-grey;
+        width: 280px;
+        height: 70px;
+        border-radius: $radius;
+        margin-bottom: $litle-margin;
+        box-shadow: 2px 5px 10px 2px $dark-grey;
+    }
+
+    .circle{
+        position: absolute;
+        margin-right: 270px;
+        background-color: $prim-color;
+        color: white;
+        padding: 5px 9px 5px 9px;
+        border-radius: 100%;
+    }
+
+    .fas{
+        position: absolute;
+        margin-left: -198px;
+    }
+}

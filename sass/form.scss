@@ -1,0 +1,59 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .zone-search{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        background-color: $dark-grey;
+        border-top: solid;
+        border-color: rgb(206, 206, 206);
+        
+    }
+
+    .explore-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $light-grey;
+
+        h2, p{
+            text-align: center;
+        }
+
+        h2{
+            margin: $big-margin 0 $litle-margin 0;
+        }
+
+        p{
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+}
+
+.fa-map-marker-alt{
+    color: $black-footer;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+input{
+    margin: $litle-margin;
+    border: none;
+    background-color: $dark-grey;
+}
+
+input::placeholder{
+    color: $black-footer;
+    font-size: 17px;
+}
