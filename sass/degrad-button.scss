@@ -5,6 +5,7 @@ button{
     margin: $medium-margin 0 $big-margin 0;
     background: linear-gradient(175deg, $sec-color, 40%, $prim-color);
     border: none;
+    cursor: pointer;
 
     .button-explore{
         color: white;
