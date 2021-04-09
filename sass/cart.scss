@@ -6,6 +6,7 @@
     background-color: white;
     box-shadow: 2px 5px 10px 2px $dark-grey;
     margin-bottom: $litle-margin;
+    cursor: pointer;
 
     .green-nouveau{
         position: absolute;
@@ -32,7 +33,6 @@
         flex-direction: column;
         margin: 10px 0 10px 13px;
         
-
         p{
             margin-bottom: 8px;
         }

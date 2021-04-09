@@ -68,7 +68,6 @@ button .button-explore {
 footer {
   background-color: #323131;
   padding: 18px;
-  margin-top: 55px;
 }
 footer .omf-litle-logo {
   font-family: "Shrikhand", cursive;
@@ -90,6 +89,28 @@ footer .fa-hands-helping {
   font-size: 12px;
   margin-right: 2px;
 }
+@media screen and (min-width: 768px) {
+  footer .omf-litle-logo {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+}
+
+.footer-marginTop {
+  margin-top: 55px;
+}
+
+.footer-no-marginTop {
+  margin-top: 0;
+}
 
 .cart-menu {
   display: flex;
@@ -100,6 +121,7 @@ footer .fa-hands-helping {
   padding: 0;
   margin: 12px;
   box-shadow: 0px 3px 8px 2px gainsboro;
+  cursor: pointer;
 }
 .cart-menu .p-cart-column {
   padding: 10px;
@@ -108,27 +130,24 @@ footer .fa-hands-helping {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-.p-smooth {
+.cart-menu .p-smooth {
   display: block;
   font-size: 12px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-.inline-cart {
+.cart-menu .inline-cart {
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
 }
-
-.prix {
+.cart-menu .prix {
   display: block;
   margin-left: 15px;
 }
-
-.div-anime {
+.cart-menu .div-anime {
+  display: none;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -137,11 +156,15 @@ footer .fa-hands-helping {
   border-radius: 0 8px 8px 0;
   background-color: #99E2D0;
 }
-.div-anime .fa-check-circle {
+.cart-menu .div-anime .fa-check-circle {
   margin: auto;
   color: white;
   font-size: 20px;
 }
+.cart-menu:active {
+  background-color: red;
+}
+
 .cart {
   position: relative;
   width: 280px;
@@ -150,6 +173,7 @@ footer .fa-hands-helping {
   background-color: white;
   box-shadow: 2px 5px 10px 2px #e4e2e2;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .cart .green-nouveau {
   position: absolute;
