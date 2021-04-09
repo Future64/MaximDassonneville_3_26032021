@@ -7,13 +7,18 @@
     height: auto;
     background-color: $light-grey;
 
+    .img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
     .title-carte{
-        position: absolute;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         border-radius: $radius $radius 0 0;
-        margin-top: -1013px;
+        margin-top: -30px;
         background-color: $light-grey;
         width: 100%;
 
