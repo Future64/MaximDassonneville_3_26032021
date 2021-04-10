@@ -179,10 +179,11 @@ footer .fa-hands-helping {
 }
 .cart .green-nouveau {
   position: absolute;
+  right: 10px;
+  top: 15px;
   background-color: #92d8c3;
   padding: 8px 10px;
   border-radius: 2px;
-  margin: 15px 0 0 188px;
   box-shadow: 1px 1px 8px 1px #323131;
 }
 .cart .green-nouveau p {

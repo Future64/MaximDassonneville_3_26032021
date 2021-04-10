@@ -10,10 +10,11 @@
 
     .green-nouveau{
         position: absolute;
+        right: 10px;
+        top: 15px;
         background-color: rgb(146, 216, 195);
         padding: 8px 10px;
         border-radius: 2px;
-        margin: 15px 0 0 188px;
         box-shadow: 1px 1px 8px 1px $black-footer;
 
         p{
