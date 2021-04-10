@@ -8,6 +8,10 @@
     margin-bottom: $litle-margin;
     cursor: pointer;
 
+    &:active{
+        box-shadow: none;
+    }
+
     .green-nouveau{
         position: absolute;
         right: 10px;
