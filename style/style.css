@@ -89,8 +89,9 @@ a {
   margin-bottom: 15px;
   cursor: pointer;
 }
-.cart:active {
-  box-shadow: none;
+.cart:hover {
+  box-shadow: 10px 5px 10px 2px #e4e2e2;
+  opacity: 90%;
 }
 .cart .green-nouveau {
   position: absolute;
@@ -120,12 +121,6 @@ a {
 }
 .cart .p-cart .p-bold {
   font-weight: bold;
-}
-.cart .fa-heart {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -495,6 +490,59 @@ input::placeholder {
     opacity: 0;
     filter: blur(10px);
   }
+}
+@keyframes remplissage {
+  0% {
+    font-size: 0;
+  }
+  50% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 18px;
+  }
+}
+.bloc-heart {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  bottom: 15px;
+  background-color: yellow;
+  width: 25px;
+  height: 25px;
+}
+
+.fa-heart {
+  position: relative;
+  z-index: 3;
+  right: 0px;
+  bottom: 0px;
+  font-size: 20px;
+}
+.fa-heart:hover + .white-font-heart {
+  background-color: yellow;
+}
+
+.red-heart {
+  position: absolute;
+  z-index: 1;
+  right: 4px;
+  bottom: 5px;
+  font-size: 17px;
+  color: red;
+}
+
+.white-font-heart {
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  bottom: 7px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

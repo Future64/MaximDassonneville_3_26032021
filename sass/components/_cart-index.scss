@@ -8,8 +8,9 @@
     margin-bottom: $litle-margin;
     cursor: pointer;
 
-    &:active{
-        box-shadow: none;
+    &:hover{
+        box-shadow: 10px 5px 10px 2px $dark-grey;
+        opacity: 90%;
     }
 
     .green-nouveau{
@@ -45,13 +46,6 @@
         .p-bold{
             font-weight: bold;
         }
-    }
-
-    .fa-heart{
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
-        font-size: 20px;
     }
 }
 

@@ -32,3 +32,15 @@
         filter: blur(10px);
     }
 }
+
+@keyframes remplissage {
+    0% {
+        font-size: 0;
+    }
+    50%{
+        font-size: 18px;
+    }
+    100% {
+        font-size: 18px;
+    }
+}
