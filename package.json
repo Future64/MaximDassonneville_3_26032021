@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch sass/style.scss style/style.css"
+    "watch": "sass --watch sass/style.scss style/style-unprefixe.css",
+    "prefixe": "postcss style/style-unprefixe.css -u autoprefixer -o style/style.css -w --verbose"
   },
   "repository": {
     "type": "git",
@@ -13,11 +14,15 @@
   },
   "author": "",
   "license": "MIT",
+  "Browserslist": "last 30 version",
   "bugs": {
     "url": "https://github.com/Future64/MaximDassonneville_3_26032021/issues"
   },
   "homepage": "https://github.com/Future64/MaximDassonneville_3_26032021#readme",
   "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm": "^7.9.0",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.32.8"
   }
 }
