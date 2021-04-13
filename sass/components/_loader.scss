@@ -1,7 +1,7 @@
 .loader-container {
     position: fixed;
     z-index: 100;
-    background-color:rgba(211, 211, 211, 0.612);
+    background-color:rgba(244, 232, 249, 0.927);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,8 +15,13 @@
 
     // animation
     animation-name: hidden;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
+
+    .bloc-logo-loader {
+        position: absolute;
+        top: 400px
+    }
 
     .loader{
         position: absolute;
@@ -68,4 +73,9 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
+}
+
+.logo-loader {
+    font-size: 60px;
+    font-family: "Shrikhand", cursive;
 }

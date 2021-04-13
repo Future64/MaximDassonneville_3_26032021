@@ -92,6 +92,7 @@ a {
 .cart:hover {
   box-shadow: 10px 5px 10px 2px #e4e2e2;
   opacity: 90%;
+  transition-duration: 0.3s;
 }
 .cart .green-nouveau {
   position: absolute;
@@ -146,16 +147,24 @@ button {
 button .button-explore {
   color: white;
 }
+button:hover {
+  box-shadow: 0px 0px 8px 3px #d0d0d0;
+  transition-duration: 0.3s;
+}
 
 .btn-command {
   display: flex;
   justify-content: center;
 }
+.btn-command:hover {
+  box-shadow: 0px 0px 8px 3px #d0d0d0;
+  transition-duration: 0.3s;
+}
 
 .loader-container {
   position: fixed;
   z-index: 100;
-  background-color: rgba(211, 211, 211, 0.612);
+  background-color: rgba(244, 232, 249, 0.927);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -165,8 +174,12 @@ button .button-explore {
   right: 100vw;
   opacity: 0;
   animation-name: hidden;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-timing-function: ease-out;
+}
+.loader-container .bloc-logo-loader {
+  position: absolute;
+  top: 400px;
 }
 .loader-container .loader {
   position: absolute;
@@ -209,6 +222,11 @@ button .button-explore {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+.logo-loader {
+  font-size: 60px;
+  font-family: "Shrikhand", cursive;
 }
 
 .logo-ohmyfood {
