@@ -1,15 +1,24 @@
-main{
 
-    .restaurants{
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-grey;
+    margin-top: $big-margin;
+
+    h2{
+        margin-left: -148px;        
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .cart-container{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $light-grey;
-        margin-top: $big-margin;
-
-        h2{
-            margin-left: -148px;
-        }
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }

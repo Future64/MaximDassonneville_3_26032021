@@ -1,10 +1,11 @@
-aside{
+.fonct-bloc{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     h2{
+        display: block;
         margin-left: -110px;
     }
 
@@ -36,3 +37,20 @@ aside{
         margin-left: -198px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    
+    .buttons-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+        .button-aside{
+            margin: 18px;
+        }
+
+
+    }
+}
+

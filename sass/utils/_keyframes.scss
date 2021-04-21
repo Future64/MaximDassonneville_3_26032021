@@ -1,0 +1,57 @@
+// tourne sur elle même (en fonction des secondes)
+@keyframes twist {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+// attends les 3/4 du temps puis elle glisse à gauche + disparaît
+@keyframes hidden {
+    0% {
+        right: 0;
+        opacity: 0;
+    }
+    5% {
+        right: 0;
+        opacity: 0,5;
+    }
+    30% {
+        right: 0;
+        opacity: 1;
+    }
+    80% {
+        filter: blur(0);
+    }
+    90% {
+        right: 0;
+        opacity: 1;
+        filter: blur(4px);
+    }
+    100% {
+        right: 100vw;
+        opacity: 0;
+        filter: blur(10px);
+    }
+}
+
+@keyframes remplissage {
+    0% {
+        font-size: 0;
+    }
+    50%{
+        font-size: 18px;
+    }
+    100% {
+        font-size: 18px;
+    }
+}
+
+@keyframes viewTranslate {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
