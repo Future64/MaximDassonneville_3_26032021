@@ -9,6 +9,9 @@
     margin: 12px;
     box-shadow: 0px 3px 8px 2px rgb(220, 220, 220);
     cursor: pointer;
+    
+
+
 
     .p-cart-column{
         padding: 10px;
@@ -39,7 +42,6 @@
     }
 
     .div-anime{
-        display: none;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -54,9 +56,16 @@
             font-size: 20px;
         }
     }
-    &:active{
-        background-color: red; 
-    }
+}
+
+.bloc-1 .cart-menu{
+    animation: viewTranslate 0.4s ease-out;
+}
+.bloc-2 .cart-menu{
+    animation: viewTranslate 0.7s ease-out;
+}
+.bloc-3 .cart-menu{
+    animation: viewTranslate 1s ease-out;
 }
 
 
