@@ -36,6 +36,10 @@ a {
   margin: 12px;
   box-shadow: 0px 3px 8px 2px gainsboro;
   cursor: pointer;
+  overflow: hidden;
+}
+.cart-menu input {
+  display: none;
 }
 .cart-menu .p-cart-column {
   padding: 10px;
@@ -64,10 +68,11 @@ a {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 70px;
+  width: 0px;
   height: auto;
   border-radius: 0 8px 8px 0;
   background-color: #99E2D0;
+  transition: 500ms;
 }
 .cart-menu .div-anime .fa-check-circle {
   margin: auto;
@@ -87,6 +92,17 @@ a {
   animation: viewTranslate 1s ease-out;
 }
 
+input:checked ~ .div-anime {
+  width: 70px;
+}
+
+/*#gout-1:checked + .fa-check-circle{
+    transform: rotate(0.5turn);
+}
+
+label:hover ~ .div-anime{
+    width: 70px;
+}*/
 .cart {
   position: relative;
   width: 280px;
