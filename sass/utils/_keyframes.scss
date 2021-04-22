@@ -1,7 +1,11 @@
 // tourne sur elle même (en fonction des secondes)
 @keyframes twist {
-    0% {transform: rotate(0deg)}
-    100% {transform: rotate(360deg)}
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 // attends les 3/4 du temps puis elle glisse à gauche + disparaît
