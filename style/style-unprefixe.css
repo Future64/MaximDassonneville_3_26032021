@@ -85,15 +85,15 @@ a {
 }
 
 .bloc-1 .cart-menu {
-  animation: viewTranslate 0.4s ease-out;
-}
-
-.bloc-2 .cart-menu {
   animation: viewTranslate 0.7s ease-out;
 }
 
+.bloc-2 .cart-menu {
+  animation: viewTranslate 0.9s ease-out;
+}
+
 .bloc-3 .cart-menu {
-  animation: viewTranslate 1s ease-out;
+  animation: viewTranslate 1300ms ease-out;
 }
 
 label:hover .div-anime .fa-check-circle {
@@ -529,7 +529,7 @@ input::placeholder {
 @keyframes viewTranslate {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
