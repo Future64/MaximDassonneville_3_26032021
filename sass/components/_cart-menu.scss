@@ -11,9 +11,12 @@
     cursor: pointer;
     overflow: hidden;
 
-
     input{
         display: none;
+
+        &:checked ~ .div-anime{
+            width: 70px;
+        }
     }
     
     .p-cart-column{
@@ -32,7 +35,6 @@
         text-overflow: ellipsis;
     }
     
-    
     .inline-cart{
         display: flex;
         justify-content: space-between;
@@ -45,8 +47,6 @@
     }
 
     .div-anime{
-        //position: absolute;
-        //right: -70px;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -60,10 +60,12 @@
             margin: auto;
             color: white;
             font-size: 20px;
-            //transition-duration: 1s;
+            transition-duration: 1s;
         }
     }
 }
+
+//animation
 
 .bloc-1 .cart-menu{
     animation: viewTranslate 0.4s ease-out;
@@ -75,16 +77,11 @@
     animation: viewTranslate 1s ease-out;
 }
 
-
-input:checked ~ .div-anime{
-    width: 70px;
+label:hover .div-anime .fa-check-circle{
+    transform: rotate(2turn);
 }
 
-/*#gout-1:checked + .fa-check-circle{
-    transform: rotate(0.5turn);
-}
-
-label:hover ~ .div-anime{
+label:hover .div-anime{
     width: 70px;
-}*/
+}
 

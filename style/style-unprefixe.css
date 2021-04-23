@@ -41,6 +41,9 @@ a {
 .cart-menu input {
   display: none;
 }
+.cart-menu input:checked ~ .div-anime {
+  width: 70px;
+}
 .cart-menu .p-cart-column {
   padding: 10px;
   width: 100%;
@@ -78,6 +81,7 @@ a {
   margin: auto;
   color: white;
   font-size: 20px;
+  transition-duration: 1s;
 }
 
 .bloc-1 .cart-menu {
@@ -92,17 +96,14 @@ a {
   animation: viewTranslate 1s ease-out;
 }
 
-input:checked ~ .div-anime {
+label:hover .div-anime .fa-check-circle {
+  transform: rotate(2turn);
+}
+
+label:hover .div-anime {
   width: 70px;
 }
 
-/*#gout-1:checked + .fa-check-circle{
-    transform: rotate(0.5turn);
-}
-
-label:hover ~ .div-anime{
-    width: 70px;
-}*/
 .cart {
   position: relative;
   width: 280px;
