@@ -151,7 +151,7 @@ label:hover .div-anime {
 
 @media screen and (min-width: 768px) {
   .cart {
-    width: 500px;
+    width: 450px;
     margin: 10px;
   }
 }
@@ -265,17 +265,41 @@ button .button-explore {
   align-items: center;
   background-color: #f7f7f7;
   margin-top: 55px;
+  width: 100%;
 }
-.restaurants h2 {
+.restaurants .title-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
   margin-left: -148px;
 }
 
 @media screen and (min-width: 768px) {
-  .cart-container {
+  main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .restaurants {
+    margin-top: 0;
+  }
+  .restaurants .title-restaurant {
+    margin-left: -320px;
+  }
+
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurants .title-restaurant {
+    margin-left: -568px;
   }
 }
 .section-restaurant {
@@ -327,6 +351,25 @@ button .button-explore {
   padding: 12px 40px;
 }
 
+.restaurant-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bloc-1--top {
+    margin-top: 68px;
+  }
+}
 footer {
   background-color: #323131;
   padding: 18px;
@@ -438,6 +481,7 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: inherit;
 }
 .fonct-bloc h2 {
   display: block;
@@ -470,14 +514,36 @@ input::placeholder {
 }
 
 @media screen and (min-width: 768px) {
+  .fonct-bloc {
+    justify-content: flex-start;
+    width: 800px;
+  }
+  .fonct-bloc h2 {
+    margin-left: -110px;
+  }
+
   .buttons-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
   }
   .buttons-container .button-aside {
     margin: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fonct-bloc {
+    width: 1300px;
+  }
+  .fonct-bloc h2 {
+    margin-left: -310px;
+  }
+  .fonct-bloc .button-aside {
+    width: 500px;
+  }
+  .fonct-bloc .circle {
+    margin-right: 500px;
   }
 }
 @keyframes twist {

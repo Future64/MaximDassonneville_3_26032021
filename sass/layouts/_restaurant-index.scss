@@ -6,19 +6,59 @@
     align-items: center;
     background-color: $light-grey;
     margin-top: $big-margin;
+    width: 100%;
 
-    h2{
-        margin-left: -148px;        
+    .title-restaurant{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: auto;
+        margin-left: -148px;
     }
 }
 
 
 @media screen and (min-width: 768px) {
 
-    .cart-container{
+    main{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .restaurants{
+        margin-top: 0;
+
+        .title-restaurant{
+            margin-left: -320px;
+        }
+    }
+    
+    .cart-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .restaurants{
+
+        .title-restaurant{
+            margin-left: -568px;
+        }
+    }
+}
+
+@media screen and (min-width: 2560px){
+    .restaurants{
+
+        .title-restaurant{
+            
+            
+        }
     }
 }

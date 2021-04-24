@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: inherit;
 
     h2{
         display: block;
@@ -39,10 +40,19 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .fonct-bloc{
+        justify-content: flex-start;
+        width: 800px;
+
+        h2{
+            margin-left: -110px;
+        }
+    }
     
     .buttons-container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
         
@@ -54,3 +64,21 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .fonct-bloc{
+        width: 1300px;
+
+        h2{
+            margin-left: -310px;
+        }
+        
+        .button-aside{
+            width: 500px;
+        }
+
+        .circle{
+            margin-right: 500px;
+        }
+    }
+    
+}
