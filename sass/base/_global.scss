@@ -1,8 +1,9 @@
-p, h2{
+p, h3, .h2noRoboto{
     font-family: 'Roboto', sans-serif;
 }
 
 h2{
+    font-family: "Shrikhand", cursive;
     margin-top: $big-margin;
     margin-bottom: $medium-margin;
     font-size: $size-title;

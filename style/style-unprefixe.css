@@ -2,11 +2,12 @@
 /* Taille */
 /* Margin */
 /* Radius */
-p, h2 {
+p, h3, .h2noRoboto {
   font-family: "Roboto", sans-serif;
 }
 
 h2 {
+  font-family: "Shrikhand", cursive;
   margin-top: 55px;
   margin-bottom: 30px;
   font-size: 25px;
@@ -169,11 +170,6 @@ button {
   border: none;
   cursor: pointer;
 }
-button:hover {
-  opacity: 90%;
-  box-shadow: 0px 0px 10px 5px #d0d0d0;
-  transition-duration: 0.3s;
-}
 button .button-explore {
   color: white;
 }
@@ -181,6 +177,12 @@ button .button-explore {
 .btn-command {
   display: flex;
   justify-content: center;
+}
+
+button:hover {
+  opacity: 0.83;
+  box-shadow: 0px 0px 10px 5px #d0d0d0;
+  transition-duration: 0.5s;
 }
 
 .loader-container {
