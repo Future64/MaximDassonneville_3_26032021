@@ -76,9 +76,6 @@ a {
 .cart-menu .prix {
   display: block;
   margin-left: 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .cart-menu .div-anime {
   display: flex;
