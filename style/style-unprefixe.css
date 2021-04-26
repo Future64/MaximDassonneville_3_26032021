@@ -30,6 +30,7 @@ a {
 .cart-menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
   position: relative;
   background-color: white;
   border-radius: 8px;
@@ -46,6 +47,7 @@ a {
   width: 70px;
 }
 .cart-menu .p-cart-column {
+  display: inline-block;
   padding: 10px;
   width: 100%;
   overflow: hidden;
@@ -53,8 +55,15 @@ a {
   text-overflow: ellipsis;
 }
 .cart-menu .p-smooth {
-  display: block;
+  display: inline-block;
+  max-width: 230px;
   font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cart-menu .p-bold {
+  max-width: 230px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -67,6 +76,9 @@ a {
 .cart-menu .prix {
   display: block;
   margin-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .cart-menu .div-anime {
   display: flex;
@@ -105,10 +117,29 @@ label:hover .div-anime {
   width: 70px;
 }
 
+label:hover .div-anime > .p-smooth {
+  max-width: 100px;
+}
+
 label:hover input:checked ~ .div-anime .fa-check-circle {
   animation: none;
 }
 
+@media screen and (min-width: 400px) {
+  .cart-menu {
+    min-width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cart-menu {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 1196px) {
+  .cart-menu {
+    max-width: 420px;
+  }
+}
 .cart {
   position: relative;
   width: 280px;
