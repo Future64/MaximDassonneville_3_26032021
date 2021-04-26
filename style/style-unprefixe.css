@@ -203,7 +203,7 @@ button:hover {
 }
 .loader-container .bloc-logo-loader {
   position: absolute;
-  top: 400px;
+  top: 20vh;
 }
 .loader-container .loader-2 {
   position: absolute;
