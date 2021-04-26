@@ -59,3 +59,9 @@
         transform: translateY(0px);
     }
 }
+
+@keyframes rotateCheck {
+    100% {
+        transform: rotate(2turn);
+    }
+}

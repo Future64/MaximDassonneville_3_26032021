@@ -79,10 +79,13 @@
 }
 
 label:hover .div-anime .fa-check-circle{
-    transform: rotate(2turn);
+    animation: rotateCheck .8s ease forwards;
 }
 
 label:hover .div-anime{
     width: 70px;
 }
 
+label:hover input:checked ~ .div-anime .fa-check-circle {
+    animation: none;
+}
