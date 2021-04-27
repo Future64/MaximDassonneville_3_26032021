@@ -2,7 +2,7 @@
 /* Taille */
 /* Margin */
 /* Radius */
-p, h3, .h2noRoboto {
+p, h3, .h2noRoboto, .p-bold, .p-smooth, .prix {
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,6 +20,7 @@ p {
 
 .p-bold {
   font-weight: bold;
+  font-size: 15px;
 }
 
 a {
