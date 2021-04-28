@@ -1,10 +1,55 @@
+// INDEX
+.cart a .heartIndex {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  transition: 0.5s;
+}
+.heartIndex-nocolor {
+  z-index: 1;
+}
+.heartIndex-color {
+  opacity: 0;
+}
+.heartIndex-nocolor:hover {
+  opacity: 0;
+}
+.heartIndex-nocolor:hover~.heartIndex-color {
+  opacity: 1;
+}
 
-.bloc-heart {
+// PAGES à modifier !
+.section-restaurant .title-carte .heartPage {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  height: 25px;
+  width: 25px;
+  transition: 0.5s;
+}
+.heartPage-nocolor {
+  z-index: 1;
+}
+.heartPage-color {
+  opacity: 0;
+}
+.heartPage-nocolor:hover {
+  opacity: 0;
+}
+.heartPage-nocolor:hover~.heartPage-color {
+  opacity: 1;
+}
+
+
+/*.bloc-heart {
     position: absolute;
     cursor: pointer;
     background: url("../img/logo/heart-nocolor.png") no-repeat;
     background-size: 25px 25px;
-    transition: all 0.3s;
+    transition: all 5s;
+    overflow: hidden;
 
     &::after {
         content: "";
@@ -14,15 +59,19 @@
         width: 100%;
         height: 0%;
         opacity: 0;
-        transition-duration: 1s;
+        transition-duration: 5s;
         overflow: hidden;
       }
 
     &:hover::after {
-        background: url("../img/logo/heart-color.png") no-repeat;
         background-size: 25px 25px;
-        height: 100%;
+        background: url("../img/logo/heart-color.png") no-repeat;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
         opacity: 1;
+        overflow: hidden;
     }
   }
 
@@ -31,6 +80,7 @@
     width: 35px;
     height: 35px;
     right: 5px;
+    overflow: hidden;
   }
 
   .bloc-heart--resto {
@@ -38,4 +88,5 @@
     width: 35px;
     height: 35px;
     right: 15px;
-  }
+    overflow: hidden;
+  }*/ 

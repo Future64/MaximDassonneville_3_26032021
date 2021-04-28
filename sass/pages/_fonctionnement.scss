@@ -11,10 +11,6 @@
     }
 
     .button-aside{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         position: relative;
         background-color: $light-grey;
         width: 280px;
@@ -26,16 +22,33 @@
 
     .circle{
         position: absolute;
-        margin-right: 270px;
+        top: calc(50% - 13px);
+        left: -13px;
         background-color: $prim-color;
         color: white;
-        padding: 5px 9px 5px 9px;
         border-radius: 100%;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .fas{
         position: absolute;
-        margin-left: -198px;
+        width: 20px;
+        height: 20px;
+        top: calc(50% - 10px);
+        left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        text-align: center;
+        line-height: 70px;
     }
 }
 
@@ -55,12 +68,6 @@
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
-        
-        .button-aside{
-            margin: 18px;
-        }
-
-
     }
 }
 
@@ -70,14 +77,6 @@
 
         h2{
             margin-left: -310px;
-        }
-        
-        .button-aside{
-            width: 500px;
-        }
-
-        .circle{
-            margin-right: 500px;
         }
     }
     

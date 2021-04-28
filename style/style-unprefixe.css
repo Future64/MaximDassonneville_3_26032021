@@ -352,6 +352,7 @@ button:hover {
   object-fit: cover;
 }
 .section-restaurant .title-carte {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -523,10 +524,6 @@ input::placeholder {
   margin-left: -110px;
 }
 .fonct-bloc .button-aside {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: relative;
   background-color: #f7f7f7;
   width: 280px;
@@ -537,15 +534,32 @@ input::placeholder {
 }
 .fonct-bloc .circle {
   position: absolute;
-  margin-right: 270px;
+  top: calc(50% - 13px);
+  left: -13px;
   background-color: #9356DC;
   color: white;
-  padding: 5px 9px 5px 9px;
   border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .fonct-bloc .fas {
   position: absolute;
-  margin-left: -198px;
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fonct-bloc p {
+  text-align: center;
+  line-height: 70px;
 }
 
 @media screen and (min-width: 768px) {
@@ -563,9 +577,6 @@ input::placeholder {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .buttons-container .button-aside {
-    margin: 18px;
-  }
 }
 @media screen and (min-width: 1440px) {
   .fonct-bloc {
@@ -573,12 +584,6 @@ input::placeholder {
   }
   .fonct-bloc h2 {
     margin-left: -310px;
-  }
-  .fonct-bloc .button-aside {
-    width: 500px;
-  }
-  .fonct-bloc .circle {
-    margin-right: 500px;
   }
 }
 @keyframes twist {
@@ -642,43 +647,102 @@ input::placeholder {
     transform: rotate(2turn);
   }
 }
-.bloc-heart {
+.cart a .heartIndex {
   position: absolute;
-  cursor: pointer;
-  background: url("../img/logo/heart-nocolor.png") no-repeat;
-  background-size: 25px 25px;
-  transition: all 0.3s;
+  bottom: 20px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  transition: 0.5s;
 }
-.bloc-heart::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
+
+.heartIndex-nocolor {
+  z-index: 1;
+}
+
+.heartIndex-color {
   opacity: 0;
-  transition-duration: 1s;
-  overflow: hidden;
 }
-.bloc-heart:hover::after {
-  background: url("../img/logo/heart-color.png") no-repeat;
-  background-size: 25px 25px;
-  height: 100%;
+
+.heartIndex-nocolor:hover {
+  opacity: 0;
+}
+
+.heartIndex-nocolor:hover ~ .heartIndex-color {
   opacity: 1;
 }
 
-.bloc-heart--index {
-  bottom: 10px;
-  width: 35px;
-  height: 35px;
-  right: 5px;
+.section-restaurant .title-carte .heartPage {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  height: 25px;
+  width: 25px;
+  transition: 0.5s;
 }
 
-.bloc-heart--resto {
-  top: 360px;
-  width: 35px;
-  height: 35px;
-  right: 15px;
+.heartPage-nocolor {
+  z-index: 1;
 }
+
+.heartPage-color {
+  opacity: 0;
+}
+
+.heartPage-nocolor:hover {
+  opacity: 0;
+}
+
+.heartPage-nocolor:hover ~ .heartPage-color {
+  opacity: 1;
+}
+
+/*.bloc-heart {
+    position: absolute;
+    cursor: pointer;
+    background: url("../img/logo/heart-nocolor.png") no-repeat;
+    background-size: 25px 25px;
+    transition: all 5s;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        opacity: 0;
+        transition-duration: 5s;
+        overflow: hidden;
+      }
+
+    &:hover::after {
+        background-size: 25px 25px;
+        background: url("../img/logo/heart-color.png") no-repeat;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        opacity: 1;
+        overflow: hidden;
+    }
+  }
+
+  .bloc-heart--index {
+    bottom: 10px;
+    width: 35px;
+    height: 35px;
+    right: 5px;
+    overflow: hidden;
+  }
+
+  .bloc-heart--resto {
+    top: 360px;
+    width: 35px;
+    height: 35px;
+    right: 15px;
+    overflow: hidden;
+  }*/
 
 /*# sourceMappingURL=style-unprefixe.css.map */
