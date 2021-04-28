@@ -25,6 +25,8 @@
 
         h2{
             margin: $medium-margin 0 3px $litle-margin;
+            display: inline-block;
+            width: 700px;
         }
 
         .fa-heart{
@@ -53,11 +55,6 @@
     button{
         padding: 12px 40px;
     }
-}
-
-.container-resto{
-    
-    
 }
 
 .restaurant-container{

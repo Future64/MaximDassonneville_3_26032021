@@ -363,6 +363,8 @@ button:hover {
 }
 .section-restaurant .title-carte h2 {
   margin: 30px 0 3px 15px;
+  display: inline-block;
+  width: 700px;
 }
 .section-restaurant .title-carte .fa-heart {
   position: relative;
@@ -583,7 +585,10 @@ input::placeholder {
     width: 1300px;
   }
   .fonct-bloc h2 {
-    margin-left: -310px;
+    margin-left: -200px;
+  }
+  .fonct-bloc .button-aside {
+    width: 380px;
   }
 }
 @keyframes twist {
@@ -697,6 +702,8 @@ input::placeholder {
   opacity: 1;
 }
 
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
 /*.bloc-heart {
     position: absolute;
     cursor: pointer;

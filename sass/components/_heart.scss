@@ -20,7 +20,7 @@
   opacity: 1;
 }
 
-// PAGES à modifier !
+// SECTION RESTAURANT
 .section-restaurant .title-carte .heartPage {
   position: absolute;
   top: 30px;
@@ -42,7 +42,9 @@
   opacity: 1;
 }
 
-
+/*----------------------------------------------------------*/
+//Première version qui a un problème d'affichage sur Safari
+/*----------------------------------------------------------*/
 /*.bloc-heart {
     position: absolute;
     cursor: pointer;
