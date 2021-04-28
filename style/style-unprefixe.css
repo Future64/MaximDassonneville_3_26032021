@@ -537,7 +537,7 @@ input::placeholder {
 }
 .fonct-bloc .circle {
   position: absolute;
-  margin-right: 270px;
+  margin-left: -138px;
   background-color: #9356DC;
   color: white;
   padding: 5px 9px 5px 9px;
@@ -545,7 +545,7 @@ input::placeholder {
 }
 .fonct-bloc .fas {
   position: absolute;
-  margin-left: -198px;
+  margin-left: -100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -578,7 +578,7 @@ input::placeholder {
     width: 500px;
   }
   .fonct-bloc .circle {
-    margin-right: 500px;
+    margin-left: -250px;
   }
 }
 @keyframes twist {
