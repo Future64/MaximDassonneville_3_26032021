@@ -1,5 +1,4 @@
-
-.cart-menu{
+.cart-menu {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -11,16 +10,13 @@
     box-shadow: 0px 3px 8px 2px rgb(220, 220, 220);
     cursor: pointer;
     overflow: hidden;
-
-    input{
+    input {
         display: none;
-
-        &:checked ~ .div-anime{
+        &:checked~.div-anime {
             width: 70px;
         }
     }
-    
-    .p-cart-column{
+    .p-cart-column {
         display: inline-block;
         padding: 10px;
         width: 100%;
@@ -28,8 +24,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-
-    .p-smooth{
+    .p-smooth {
         display: inline-block;
         max-width: 230px;
         font-size: 12px;
@@ -37,27 +32,22 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-
     .p-bold {
         max-width: 230px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    
-    .inline-cart{
+    .inline-cart {
         display: flex;
         justify-content: space-between;
         margin-top: 5px;
     }
-    
-    .prix{
+    .prix {
         display: block;
         margin-left: 15px;
- 
     }
-
-    .div-anime{
+    .div-anime {
         display: flex;
         justify-content: center;
         align-content: center;
@@ -66,8 +56,7 @@
         border-radius: 0 8px 8px 0;
         background-color: $ter-color;
         transition: 500ms;
-    
-        .fa-check-circle{
+        .fa-check-circle {
             margin: auto;
             color: white;
             font-size: 20px;
@@ -77,48 +66,48 @@
 }
 
 //animation
-
-.bloc-1 .cart-menu{
+.bloc-1 .cart-menu {
     animation: viewTranslate 0.7s ease-out;
 }
-.bloc-2 .cart-menu{
-    animation: viewTranslate 0.9s ease-out;
-}
-.bloc-3 .cart-menu{
-    animation: viewTranslate 1300ms ease-out;
+
+.bloc-2 .cart-menu {
+    animation: viewTranslate 1500ms ease-out;
 }
 
-label:hover .div-anime .fa-check-circle{
+.bloc-3 .cart-menu {
+    animation: viewTranslate 2000ms ease-out;
+}
+
+label:hover .div-anime .fa-check-circle {
     animation: rotateCheck .8s ease forwards;
 }
 
-label:hover .div-anime{
+label:hover .div-anime {
     width: 70px;
 }
 
-label:hover .div-anime > .p-smooth{
+label:hover .div-anime>.p-smooth {
     max-width: 100px;
 }
 
-
-label:hover input:checked ~ .div-anime .fa-check-circle {
+label:hover input:checked~.div-anime .fa-check-circle {
     animation: none;
 }
 
-@media screen and (min-width: 400px)  {
-    .cart-menu{
+@media screen and (min-width: 400px) {
+    .cart-menu {
         min-width: 300px;
     }
 }
 
-@media screen and (min-width: 1024px)  {
-    .cart-menu{
+@media screen and (min-width: 1024px) {
+    .cart-menu {
         max-width: 320px;
     }
 }
 
-@media screen and (min-width: 1196px)  {
-    .cart-menu{
+@media screen and (min-width: 1196px) {
+    .cart-menu {
         max-width: 420px;
     }
 }

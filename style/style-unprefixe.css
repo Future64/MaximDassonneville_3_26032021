@@ -100,11 +100,11 @@ a {
 }
 
 .bloc-2 .cart-menu {
-  animation: viewTranslate 0.9s ease-out;
+  animation: viewTranslate 1500ms ease-out;
 }
 
 .bloc-3 .cart-menu {
-  animation: viewTranslate 1300ms ease-out;
+  animation: viewTranslate 2000ms ease-out;
 }
 
 label:hover .div-anime .fa-check-circle {
@@ -704,52 +704,5 @@ input::placeholder {
 
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
-/*.bloc-heart {
-    position: absolute;
-    cursor: pointer;
-    background: url("../img/logo/heart-nocolor.png") no-repeat;
-    background-size: 25px 25px;
-    transition: all 5s;
-    overflow: hidden;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0%;
-        opacity: 0;
-        transition-duration: 5s;
-        overflow: hidden;
-      }
-
-    &:hover::after {
-        background-size: 25px 25px;
-        background: url("../img/logo/heart-color.png") no-repeat;
-        top: 0;
-        left: 0;
-        width: 25px;
-        height: 25px;
-        opacity: 1;
-        overflow: hidden;
-    }
-  }
-
-  .bloc-heart--index {
-    bottom: 10px;
-    width: 35px;
-    height: 35px;
-    right: 5px;
-    overflow: hidden;
-  }
-
-  .bloc-heart--resto {
-    top: 360px;
-    width: 35px;
-    height: 35px;
-    right: 15px;
-    overflow: hidden;
-  }*/
 
 /*# sourceMappingURL=style-unprefixe.css.map */
